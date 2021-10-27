@@ -1,3 +1,195 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Overpass", sans-serif;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.header {
+  width: 8%;
+  background-color: #526a92;
+  padding: 8px;
+  text-align: center;
+  -webkit-box-shadow: -14px 0px 11px -9px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: -14px 0px 11px -9px rgba(34, 60, 80, 0.6) inset;
+  z-index: 0;
+}
+.header .header_wrapper {
+  margin-top: 150px;
+}
+.header .header_wrapper .nav_list li {
+  margin: 50px 0;
+}
+.header .header_wrapper .nav_list li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.header .header_wrapper .nav_list li a .nav_names::after {
+  content: '';
+  background-color: #778eb3;
+  margin: 18px;
+  padding: 18px;
+  border-radius: 50%;
+  display: grid;
+  align-self: center;
+  position: relative;
+  top: -125px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+.header .header_wrapper .nav_list li a .nav_names:active::after {
+  background-color: #6f87ad;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+.header .header_wrapper .nav_list li a .nav_names_user::after {
+  content: url(../img/user2.png);
+}
+.header .header_wrapper .nav_list li a .nav_names_news::after {
+  content: url(../img/news3.png);
+}
+
+.context_menu {
+  width: 20%;
+  background-color: #526a92;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 10px;
+  display: none;
+}
+
+.context_menu_on {
+  display: block;
+}
+
+.close_form .close_form_icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.context_menu_form {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.context_menu_form .context_menu_comment {
+  resize: none;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  font-size: 16px;
+  height: 160px;
+}
+.context_menu_form .context_menu_submit {
+  margin-top: 50px;
+  margin-left: 146px;
+  width: 150px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.context_menu_form .pseudo_select {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.context_menu_form .pseudo_select .pseudo_option {
+  margin: 13px 0;
+  margin-left: 65px;
+  display: none;
+}
+.context_menu_form .pseudo_select .pseudo_option .pseudo_option_markers {
+  margin: 0 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 30px;
+  height: 30px;
+}
+.context_menu_form .pseudo_select .pseudo_option .marker_road:hover {
+  width: 42px;
+  height: 42px;
+}
+.context_menu_form .pseudo_select .pseudo_option .marker_danger:hover {
+  width: 42px;
+  height: 42px;
+}
+.context_menu_form .pseudo_select .pseudo_option .marker_trash:hover {
+  width: 42px;
+  height: 42px;
+}
+.context_menu_form .pseudo_select .pseudo_option_on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.context_menu_form .select_marker {
+  background-image: url(../img/placeholder.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 /*# sourceMappingURL=main.css.map */

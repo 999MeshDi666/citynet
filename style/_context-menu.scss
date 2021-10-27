@@ -1,0 +1,105 @@
+.context_menu{
+    width: 20%;
+    background-color: $bg;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    // left: 0;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+    display: none;
+}
+.context_menu_on{
+    display: block;
+}
+.close_form{
+    .close_form_icon{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+
+.context_menu_form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .context_menu_comment{
+        resize: none;
+        padding: 10px;
+        font-family: $montserrat;
+        outline: none;
+        border: 0;
+        border-radius: 10px;
+        -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+        -moz-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+        box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+        font-size: 16px;
+        height: 160px;
+    }
+
+    .context_menu_submit{
+        margin-top: 50px;
+        margin-left: 146px;
+        width: 150px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    // paeudo select
+    .pseudo_select{
+        background-color: $wt;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 50px;
+        border-radius: 50%;
+        transition: 1.2s;
+        margin-left: 10px;
+        cursor: pointer;
+
+        .pseudo_option{
+            margin: 13px 0;
+            margin-left: 65px;
+            // display: flex;
+            display: none;
+            .pseudo_option_markers{
+                margin: 0 10px;
+                transition: 1s;
+                width: 30px;
+                height: 30px;
+                
+            }
+            .marker_road:hover{
+                width: 42px;
+                height: 42px;
+            }
+            .marker_danger:hover{
+                width: 42px;
+                height: 42px;
+            }
+            .marker_trash:hover{
+                width: 42px;
+                height: 42px;
+            }
+        }
+        .pseudo_option_on{
+            display: flex;
+        }
+        
+    }
+    // .pseudo_select:hover{
+    //     width: 250px;
+    //     border-radius: 20px;
+    //     background-position: 15px center;
+    // }
+    .select_marker{
+        background-image: url(../img/placeholder.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+   
+}

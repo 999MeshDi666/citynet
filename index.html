@@ -5,10 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/city.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <title>CityNet</title>
 </head>
 <body>
+    <div class="container">
+        <div  id="map"></div>
+
+        <header class="header">
+            <div class="header_wrapper">
+                <ul class="nav_list">
+                    <li><a href="#"><p class="nav_names nav_names_user">Профиль</p></a> </li>
+                    <li><a href="#"><p class="nav_names nav_names_news">Новости</p></a> </li>
+                    <!-- <li><a href="#"><img src="./img/user.png" alt=""></a></li> -->
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="context_menu">
+        <div class="close_form">
+            <img src="./img/close5.png" alt="close form" class="close_form_icon">
+        </div>
+        <form action="#" method="post" class="context_menu_form">
+            <div class="pseudo_select select_marker">
+                <div class="pseudo_option">
+                    <img src="./img/road.png" alt="broken_roads" class="pseudo_option_markers marker_road">
+                    <img src="./img/danger.png" alt="danger_city" class="pseudo_option_markers marker_danger">
+                    <img src="./img/trash-bin.png" alt="trash" class="pseudo_option_markers marker_trash">
+                </div>
+            
+            </div>
+
+            <textarea name="comment" id="comm" cols="30" rows="10" minlength= "150" maxlength="350" placeholder="Опишите свою проблему" class="context_menu_comment"></textarea>
+            <input type="submit" value="Отправить" name="submit" class="context_menu_submit">
+        </form>
+    </div>
     
+    
+    <script src="js\google_maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvLX5H7ixtDWmJGN1ySCHgZzZWgxDKqlI&callback=initMap&v=weekly" async ></script>
 </body>
 </html>
