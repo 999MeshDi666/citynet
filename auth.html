@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/city.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>CityNet</title>
+</head>
+<body>
+    <div class="container">
+        <div class="auth">
+           <div class="auth_wrapper">
+                <div class="change_btn">
+                    <button class="btn_reg btn_auth_change">Регистрация</button>
+                    <button class="btn_login btn_auth_change">Вход</button>
+                </div>
+                <form action="#" method="post" class="form_auth form_reg">
+                    <input type="text" name="name" id="name" placeholder="Имя" required class="form_auth_inputs">
+                    <input type="text" name="surname" id="surn" placeholder="Фамилия" required class="form_auth_inputs">
+                    <input type="text" name="nick" id="nick" placeholder="Введите свой логин"  required class="form_auth_inputs">
+                    <input type="email" name="email" id="email" placeholder="Электронная почта" required class="form_auth_inputs"> 
+                    <input type="password" name="password" id="pass" placeholder="Пароль" required class="form_auth_inputs">
+                    <input type="password" name="password2" id="pass2" placeholder="Подтвердите пароль" required class="form_auth_inputs">
+                    <input type="submit" value="Зарегестрироваться" class="form_auth_submit">
+                </form>
+                <form action="#" method="post" class="form_auth form_login">
+                    <input type="text" name="login" id="login" placeholder="Логин"  required class="form_auth_inputs">
+                    <input type="password" name="password" id="pass" placeholder="Пароль" required class="form_auth_inputs">
+                    <input type="submit" value="Войти" class="form_auth_submit">
+                </form>
+           </div>
+        </div>
+        <header class="header">
+            <div class="header_wrapper">
+                <ul class="nav_list">
+                    <li><a href="index.html"><p class="nav_names nav_names_maps">Карта</p></a> </li>
+                    <li><a href="#"><p class="nav_names nav_names_news">Новости</p></a> </li>
+                    <!-- <li><a href="#"><img src="./img/user.png" alt=""></a></li> -->
+                </ul>
+            </div>
+        </header>
+    </div>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

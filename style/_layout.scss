@@ -16,9 +16,9 @@
     background-color: $bg;
     padding: 8px;
     text-align: center;
-    -webkit-box-shadow: -14px 0px 11px -9px rgba(34, 60, 80, 0.6) inset;
-    -moz-box-shadow: -14px 0px 11px -9px rgba(34, 60, 80, 0.6) inset;
-    box-shadow: -14px 0px 11px -9px rgba(34, 60, 80, 0.6) inset;
+    -webkit-box-shadow: 4px 1px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 1px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 1px 8px 0px rgba(34, 60, 80, 0.2);
     z-index: 0;
 
     .header_wrapper{
@@ -63,6 +63,9 @@
                    .nav_names_news::after{
                         content: url(../img/news3.png);
                    }
+                   .nav_names_maps::after{
+                    content: url(../img/maps.png);
+               }
                 
                 
                 }

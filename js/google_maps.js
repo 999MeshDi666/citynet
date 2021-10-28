@@ -24,7 +24,7 @@ PseudoSelect.addEventListener('mouseover', ()=>{
 
     });
     OptionMarkerTrash.addEventListener('click', ()=>{
-        console.log(OptionMarkerDanger.alt);
+        console.log(OptionMarkerTrash.alt);
 
     });
     
@@ -59,7 +59,12 @@ function initMap(){
             position,
             map: MyMap,
         });
+
+
+    function RemoveMarker(position){
         
+    }
+
         let ContextMenu = document.querySelector('.context_menu');
         let ContextMenuClose = document.querySelector('.close_form_icon');
         google.maps.event.addListener(markers,'contextmenu',()=>{
