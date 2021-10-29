@@ -14,6 +14,7 @@ PseudoSelect.addEventListener('mouseover', ()=>{
     PseudoSelect.style.borderRadius = '20px'
     PseudoSelect.style.backgroundPosition = '15px center';
     ShowMarkers();
+    
 
     OptionMarkerRoad.addEventListener('click', ()=>{
         console.log(OptionMarkerRoad.alt);
@@ -39,6 +40,7 @@ PseudoSelect.addEventListener('mouseout', ()=>{
 });
 
 
+
 let MyMap;
 
 function initMap(){
@@ -59,12 +61,7 @@ function initMap(){
             position,
             map: MyMap,
         });
-
-
-    function RemoveMarker(position){
-        
-    }
-
+       
         let ContextMenu = document.querySelector('.context_menu');
         let ContextMenuClose = document.querySelector('.close_form_icon');
         google.maps.event.addListener(markers,'contextmenu',()=>{
@@ -75,6 +72,20 @@ function initMap(){
                 });
             };
         });
+        let comment = document.querySelector('.context_menu_comment');
+        let infowindow = new google.maps.InfoWindow({
+            content: comment.name,
+        })
+        google.maps.event.addListener(markers,'mouseover',()=>{
+            infowindow.open(MyMap,markers);
+        })
+        google.maps.event.addListener(markers,'mouseout',()=>{
+            infowindow.close(MyMap,markers);
+        })
+        
+        
+        
           
     };
 }
+

@@ -27,6 +27,7 @@ a {
 
 .container {
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,6 +255,81 @@ a {
 }
 .auth_wrapper .form_login_off {
   display: none;
+}
+
+.news_container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.news_block {
+  width: 100%;
+  height: 100%;
+  background-color: #8297a6;
+}
+
+.news_block_wrapper {
+  max-width: 920px;
+  margin: 80px auto;
+  font-family: "Roboto", sans-serif;
+}
+.news_block_wrapper .reading_block {
+  background-color: #fff;
+  padding: 25px 25px 15px 25px;
+  width: 620px;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-box-shadow: -1px 1px 38px 6px rgba(34, 60, 80, 0.2);
+  box-shadow: -1px 1px 38px 6px rgba(34, 60, 80, 0.2);
+}
+.news_block_wrapper .reading_block .time_author_block {
+  margin-bottom: 15px;
+  color: #888686;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.news_block_wrapper .reading_block .headline_block {
+  margin-bottom: 10px;
+}
+.news_block_wrapper .reading_block .headline_block h1 {
+  margin-bottom: 5px;
+}
+.news_block_wrapper .reading_block .text_block {
+  text-align: justify;
+  line-height: 24px;
+}
+.news_block_wrapper .reading_block .like_comment_block {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.news_block_wrapper .reading_block .like_comment_block .post_icons {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.news_block_wrapper .reading_block .like_comment_block .post_icons:hover {
+  width: 25px;
+  height: 25px;
+}
+.news_block_wrapper .reading_block .like_comment_block .like_dislike .post_dislike {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  margin-left: 20px;
+}
+.news_block_wrapper .reading_block .like_comment_block .comments {
+  margin-left: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
